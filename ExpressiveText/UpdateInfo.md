@@ -99,3 +99,4 @@ Technically, you are done. You can move the plugins folder into your project and
 - Go to the Plugins tab and find the Expressive Text plugin.
 - Click on "Package" under the plugin description. (If you do not see this, make sure `Installed` is either removed or set to false in the `.uplugin` file)
 - Once packaged, you can move the packaged result into your target Unreal's Plugins/Marketplace folder.
+- Other projects will be able to find and enable the plugin from the plugins window normally.
