@@ -87,14 +87,14 @@
   - Add a second parameter to the UPROPERTY macro and provide `DuplicateTransient`  
     `UPROPERTY( Transient )` -> `UPROPERTY( Transient, DuplicateTransient )`
 
-**\_stumpchunkman\_'s guide on how to get the Expressive Text Actor to cast shadows again**
+**@\_stumpchunkman\_'s guide on how to get the Expressive Text Actor to cast shadows again**
   - [AndrewCFG/expressive-customizations](https://github.com/AndrewCFG/expressive-customizations)
 
 # Final Steps
 ## If you are using it in a C++ project
 Technically, you are done. You can move the plugins folder into your project and your project will compile the plugin approprately.
 
-## If you are using it in Multiple OR BP-Only projects
+## If you are using it in Multiple or BP-Only projects
 - Run the C++ project that you are modifying the plugin in.
 - Go to the Plugins tab and find the Expressive Text plugin.
 - Click on "Package" under the plugin description. (If you do not see this, make sure `Installed` is either removed or set to false in the `.uplugin` file)
