@@ -78,7 +78,7 @@
     Example 1: `"appId"` -> `TEXT("appId")` | Example 2: `"events"` -> `TEXT("events")`  
     (If it is already wrapped, no change is needed)
 
-**The following is to fix the ExpressiveTextActor flickering** (thanks @\_stumpchunkman\_ on discord)
+**The following is to fix the ExpressiveTextActor flickering** (thanks @AndrewCFG on discord)
 - `ExpressiveTextComponent.h` - `Line 177`  
   - Add a third parameter to the NewObject function and provide `RF_Transient | RF_DuplicateTransient`  
     `...(this, *ObjectName);` -> `...(this, *ObjectName, RF_Transient | RF_DuplicateTransient);`
@@ -87,7 +87,7 @@
   - Add a second parameter to the UPROPERTY macro and provide `DuplicateTransient`  
     `UPROPERTY( Transient )` -> `UPROPERTY( Transient, DuplicateTransient )`
 
-**@\_stumpchunkman\_'s guide on how to get the Expressive Text Actor to cast shadows again**
+**@AndrewCFG's guide on how to get the Expressive Text Actor to cast shadows again**
   - [AndrewCFG/expressive-customizations](https://github.com/AndrewCFG/expressive-customizations)
 
 # Final Steps
